@@ -33,6 +33,7 @@ namespace Simulator
         public void CalculateProfit()
         {
             //ammount = cityFrom.
+            //
         }
     }
 }
