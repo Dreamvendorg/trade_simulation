@@ -10,8 +10,8 @@ namespace Simulator
         public bool isPossibly;
         public City cityFrom;
         public City cityTo;
-        public ResourceType sellResource;
-        public ResourceType buyResource;
+        public Pop seller;
+        public Pop buyer;
 
         public double ammount;
         public double result;
@@ -22,12 +22,12 @@ namespace Simulator
 
         }
 
-        public Deal(City _cityFrom, City _cityTo, ResourceType _sellResource, ResourceType _buyResource)
+        public Deal(City _cityFrom, City _cityTo, Pop _seller, Pop _buyer)
         {
             cityFrom = _cityFrom;
             cityTo = _cityTo;
-            sellResource = _sellResource;
-            buyResource = _buyResource;
+            seller = _seller;
+            buyer = _buyer;
         }
 
         public void CalculateProfit()

@@ -21,8 +21,8 @@ namespace Simulator
         public List<City> neighbourCities = new List<City>();
         public Pop[] population = new Pop[4];
         public String name;
-        public Storage storage = new Storage();
         public Storage tradeStorage = new Storage();
+        public Storage storage = new Storage();
         public Market market = new Market();
         public int tradePower;
 
@@ -87,7 +87,7 @@ namespace Simulator
             ResourceType res = population[(int)popType].producingResource;
             if (res != ResourceType.none)
             {
-                surplus = storage.resources[(int)res] * market.PriceInCoins(res);
+                surplus = population[(int)popType].productionAmount * market.PriceInCoins(res);
             }
             else
             {
@@ -116,7 +116,8 @@ namespace Simulator
             {
                 if (population[i].producingResource != ResourceType.none)
                 {
-                    storage.resources[(int)population[i].producingResource] += population[i].count * population[i].productionPower * CityMod((PopType)i);
+                    population[i].productionAmount += population[i].count * population[i].productionPower * CityMod((PopType)i);
+                    storage.resources[(int)population[i].producingResource] = population[i].productionAmount;
                 }
             }
 
@@ -161,15 +162,15 @@ namespace Simulator
 
         public Deal FindBestDeal(ResourceType type)
         {
-            Deal bestDeal = new Deal();
             foreach (City city in neighbourCities)
             {
-                for (int i = 0; i < storage.resources.Length; ++i)
+                Deal bestDeal = new Deal();
+                foreach (Pop popSeller in population)
                 {
-                    Deal newDeal = new Deal();
-                    newDeal.cityFrom = city;
-                    newDeal.cityTo = city;
-                    city.market.PriceInAnotherResource(type, (ResourceType)i);
+                    foreach (Pop popBuyer in city.population)
+                    {
+                        Deal newDeal = new Deal(this, city, popSeller, popBuyer);
+                    }
                 }
             }
 

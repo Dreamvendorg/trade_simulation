@@ -21,6 +21,7 @@ namespace Simulator
         public double coins = 0;
         public ResourceType producingResource;
         public double productionPower;
+        public double productionAmount;
 
         public Pop(PopType _type, int _count)
         {
