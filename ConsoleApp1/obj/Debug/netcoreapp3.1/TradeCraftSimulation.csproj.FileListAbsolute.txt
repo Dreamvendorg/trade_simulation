@@ -1,0 +1,13 @@
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.exe
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.deps.json
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.runtimeconfig.json
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.runtimeconfig.dev.json
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.dll
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\bin\Debug\netcoreapp3.1\TradeCraftSimulation.pdb
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.csprojAssemblyReference.cache
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.AssemblyInfoInputs.cache
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.AssemblyInfo.cs
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.csproj.CoreCompileInputs.cache
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.dll
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.pdb
+D:\Work\Code\Simulation\TradeCraftSimulation\ConsoleApp1\obj\Debug\netcoreapp3.1\TradeCraftSimulation.genruntimeconfig.cache
