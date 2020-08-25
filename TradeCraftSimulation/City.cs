@@ -162,14 +162,16 @@ namespace Simulator
 
         public Deal FindBestDeal(ResourceType type)
         {
+            Deal bestDeal = new Deal();
             foreach (City city in neighbourCities)
             {
-                Deal bestDeal = new Deal();
                 foreach (Pop popSeller in population)
                 {
                     foreach (Pop popBuyer in city.population)
                     {
                         Deal newDeal = new Deal(this, city, popSeller, popBuyer);
+                        if ((newDeal.isPossibly) && (newDeal.profitPerUnit > bestDeal.profitPerUnit))
+                                bestDeal = newDeal;
                     }
                 }
             }

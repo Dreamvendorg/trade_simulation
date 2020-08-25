@@ -39,7 +39,14 @@ namespace Simulator
 
         public double PriceInAnotherResource(ResourceType sellType, ResourceType buyType)
         {
-            return price.resources[(int)sellType] / price.resources[(int)buyType];
+            if (sellType == ResourceType.none || buyType == ResourceType.none)
+            {
+                return 0;
+            }
+            else
+            {
+                return price.resources[(int)sellType] / price.resources[(int)buyType];
+            }
         }
     }
 }
